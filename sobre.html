@@ -1,27 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre – Gustavo França</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sobre - Gustavo França</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e1e2f, #2a2a40);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 1.5rem;
+            animation: fadeIn 2s ease-out;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        .btn-sobre {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.7rem 1.5rem;
+            background-color: #00adb5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn-sobre:hover {
+            background-color: #008b93;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0; transform: scale(0.9);}
+            100% {opacity: 1; transform: scale(1);}
+        }
+        @keyframes fadeInUp {
+            0% {opacity: 0; transform: translateY(20px);}
+            100% {opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
-  <div class="page-transition"></div>
-  <header>
-    <h1 class="glow">Sobre Mim</h1>
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="contato.html">Contato</a>
-      <button id="darkModeToggle">🌙</button>
-    </nav>
-  </header>
-  <section>
-    <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Unoeste. Apaixonado por tecnologia, busco desenvolver soluções criativas com foco em usabilidade e performance.</p>
-  </section>
-  <script src="main.js"></script>
+    <div class="container">
+        <img src="foto-perfil.png" alt="Foto de Gustavo França" class="profile-img"/>
+        <h1>Sobre Mim</h1>
+        <p>
+            Olá! Me chamo <strong>Gustavo França</strong>, sou estudante universitário de Análise e Desenvolvimento de Sistemas pela UNOESTE.
+            Tenho paixão por tecnologia e desenvolvimento web, com foco em aplicações práticas que ajudem pessoas e empresas.
+        </p>
+        <p>
+            Já desenvolvi diversos projetos como um sistema escolar, uma plataforma de adoção de animais e até um jogo visual novel em Unity.
+            Possuo habilidades com <strong>HTML, CSS, JavaScript, Node.js, MySQL</strong> e frameworks como <strong>EJS</strong>. Também sou familiar com Git, GitHub e deploy via Vercel.
+        </p>
+        <p>
+            Gosto de trabalhar em equipe, encarar novos desafios e sempre buscar evoluir como profissional e pessoa.
+            Estou aberto a oportunidades, freelas e colaborações!
+        </p>
+        <a href="contato.html" class="btn-sobre">Entre em Contato</a>
+    </div>
 </body>
 </html>
